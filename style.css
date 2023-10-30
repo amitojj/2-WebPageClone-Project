@@ -1,6 +1,7 @@
 :root {
   --c1: #ef027f;
-  --c2: #9c9d9e;
+  --c2: #707070;
+  --cshd:#a5a4a4;
   --rale: "Raleway", sans-serif;
   --nun: "Nunito", sans-serif;
   --mon: "Montserrat", sans-serif;
@@ -17,11 +18,141 @@ body {
   font-family: var(--pop);
   background-image: url("./Assets/background-image.png");
   background-size: 100% 100%;
+  user-select: none;
 }
 a {
   text-decoration: none;
   color: var(--c2);
 }
-a:hover {
+l1>a:hover {
   color: var(--c1);
 }
+.navbar{
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: var(--c2);
+}
+ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+li:hover{
+  color: var(--c1);
+  cursor: pointer;
+}
+.login{
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+.service{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.iservice{
+  padding: 8px 15px;
+  color: white;
+  background-color: var(--c1);
+  font-size: 15px;
+  border-radius: 5px;
+  transition: transform 0.2s linear;
+}
+.iservice:hover{
+  transform: scale(1.1, 1.1);
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+ 
+  
+}
+.left{
+  margin: 0 50px;
+  
+}
+
+.right img{
+  height: 100%;
+  width: 100%;
+}
+h1 {
+  font-size: 80px;
+}
+.motto{
+  font-size: 25px;
+  color: var(--c2);
+}
+.btn1{
+  padding: 10px 15px;
+  color: white;
+  background-color: var(--c1);
+  font-size: 17px;
+  border-radius: 5px;
+  transition: transform 0.2s linear;
+  display: inline-block;
+  margin-top: 20px;
+  width: 200px;
+  text-align: center;
+}
+.btn1:hover{
+  transform: scale(1.2, 1.2);
+}
+.btn2{
+  padding: 10px 15px;
+  border:1px solid var(--c1);
+  color: var(--c1);
+  font-size: 17px;
+  border-radius: 5px;
+  transition: transform 0.2s linear;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 200px;
+  text-align: center;
+}
+.btn2:hover{
+  transform: scale(1.2, 1.2);
+}
+.absolute{
+  position: absolute;
+   width: 150px;
+  /* border: 1px solid #ccc; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius:40px;
+  padding: 10px;
+  box-shadow: 0 0 10px 3px var(--cshd);
+  transform: translate(-50%);
+  background-color: white;
+  transition: width 0.2s linear;
+}
+.car{
+  top: 15%;
+  left: 50%;
+}
+.home{
+  top: 25%;
+  right: 1%;
+}
+.absolute:hover{
+  width: 170px;
+  cursor: pointer;
+}
+.social{
+  display: flex;
+  margin:10px 50px;
+  gap: 20px;
+}
+@
