@@ -1,0 +1,27 @@
+:root {
+  --c1: #ef027f;
+  --c2: #9c9d9e;
+  --rale: "Raleway", sans-serif;
+  --nun: "Nunito", sans-serif;
+  --mon: "Montserrat", sans-serif;
+  --pop: "Poppins", sans-serif;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--pop);
+  background-image: url("./Assets/background-image.png");
+  background-size: 100% 100%;
+}
+a {
+  text-decoration: none;
+  color: var(--c2);
+}
+a:hover {
+  color: var(--c1);
+}
