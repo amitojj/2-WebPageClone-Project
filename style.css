@@ -192,7 +192,7 @@ h1 {
 }
 .social{
   display: flex;
-  margin:10px 50px;
+  margin:50px 50px;
   gap: 20px;
 }
 footer img{
