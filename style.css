@@ -157,6 +157,7 @@ h1 {
 }
 .btn2{
   border:1px solid var(--c1);
+  background-color: white;
   color: var(--c1);
   
 }
@@ -194,6 +195,13 @@ h1 {
   margin:10px 50px;
   gap: 20px;
 }
+footer img{
+  transition: transform 0.2s linear;
+}
+footer img:hover{
+  cursor: pointer;
+  transform: scale(1.2 , 1.2);
+}
 @media screen and (max-width: 1024px) {
   .menu{
     display: none;
@@ -227,6 +235,9 @@ h1 {
   }
 }
 @media screen and (max-width: 768px){
+  body{
+    background-image: url('./Assets/background-image-vertical.png');
+  }
   main{
     display: flex;
     flex-direction: column-reverse;
@@ -247,5 +258,8 @@ h1 {
   .car{
     left:0px;
     top: 100px;
+  }
+  h1{
+    font-size: 32px;
   }
 }
