@@ -17,8 +17,10 @@ body {
   height: 100vh;
   font-family: var(--pop);
   background-image: url("./Assets/background-image.png");
-  background-size: 100% 100%;
+  background-size:100% 100%;
+  background-repeat: no-repeat;
   user-select: none;
+  
 }
 a {
   text-decoration: none;
@@ -48,8 +50,8 @@ l1>a:hover {
   font-weight: 500;
 }
 .menu-h{
- display: none;
- list-style: none;
+  display: none;
+  list-style: none;
   border-bottom: 1px solid #ccc;
   width: 300px;
 }
@@ -57,7 +59,7 @@ l1>a:hover {
   border-bottom: 1px solid #ccc;
   color: white;
   background-color: var(--c1);
-
+  
 }
 .menu-h > li:hover{
   background-color: white;
@@ -100,15 +102,22 @@ li:hover{
   /* align-self: center; */
 }
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  
+  display: flex;
+  margin: 0 20px 0 20px;
+  justify-content: center;
   
 }
 .left{
-  margin: 0 50px;
-  
+  margin-left: 50px ;
+  padding-right: 10px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.right{
+  flex: 1;
 }
 
 .right img{
@@ -121,6 +130,10 @@ h1 {
 .motto{
   font-size: 1.5vw;
   color: var(--c2);
+}
+.btn-grp{
+  display: flex;
+  justify-content:start;
 }
 .btn{
   padding: 10px 15px;
@@ -160,17 +173,17 @@ h1 {
   border-radius:40px;
   padding: 10px;
   box-shadow: 0 0 10px 3px var(--cshd);
-  transform: translate(-50%);
   background-color: white;
   transition: width 0.2s linear;
 }
 .car{
+  transform: translate(-50%);
   top: 100px;
   left: 50%;
 }
 .home{
   top: 175px;
-  right: 0;
+  right: 10px;
 }
 .absolute:hover{
   width: 170px;
@@ -192,5 +205,47 @@ h1 {
   .bars:hover > .menu-h{
     display: flex;
     flex-direction: column;
+    position: absolute;
+    z-index: 2;
+  }
+  .absolute{
+    
+    transform: translate(0%);
+  }
+  .btn-grp{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home{
+    top: 70px;
+    right:0px;
+  }
+  .motto{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px){
+  main{
+    display: flex;
+    flex-direction: column-reverse;
+    /* width: 100vw;
+    height: 100vh;
+    justify-content: flex-end; */
+  }
+
+  .right{
+    display: flex;
+    justify-content: center;
+  }
+  .right  img{
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+  .car{
+    left:0px;
+    top: 100px;
   }
 }
